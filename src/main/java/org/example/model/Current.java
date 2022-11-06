@@ -5,10 +5,9 @@ import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.example.model.AirQuality;
-import org.example.model.Condition;
 
 import java.io.Serializable;
+
 @Getter
 @Setter
 @ToString
@@ -38,9 +37,6 @@ public class Current implements Serializable {
 
 	@SerializedName("precip_in")
 	public double precipIn;
-
-	@SerializedName("air_quality")
-	public AirQuality airQuality;
 
 	@SerializedName("wind_dir")
 	public String windDir;
