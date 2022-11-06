@@ -1,12 +1,14 @@
 package org.example.model;
 
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import java.io.Serializable;
+
 @Getter
 @Setter
 @ToString
@@ -18,6 +20,9 @@ public class Location implements Serializable {
 
 	@SerializedName("country")
 	public String country;
+
+	@SerializedName("localtime_epoch")
+	public int localtimeEpoch;
 
 	@SerializedName("name")
 	public String name;
@@ -32,5 +37,5 @@ public class Location implements Serializable {
 	public double lat;
 
 	@SerializedName("tz_id")
-	public String timeZoneId;
+	public String tzId;
 }
